@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link id="stylesheet" rel="stylesheet" href="style\main.css"> <!-- Default stylesheet -->
+        <title>Italian Destinations - Rome Attractions</title>
+
+        <!-- Toggle button to switch stylesheets -->
+        <button class="toggle-button" id="toggleButton2">
+            Toggle Mode
+        </button>
+
+        <style>
+            @keyframes slideIn {
+                0% {
+                    transform: translateY(-100%);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes slideOver {
+                0% {
+                    left: 100%;
+                    transform: translateX(100%);
+                }
+                100% {
+                    left: 100%;
+                    transform: translateX(0%);
+                }
+            }
+            @keyframes slideRight {
+                0% {
+                    right: 100%;
+                    transform: translateX(0%);
+                }
+                100% {
+                    right: 100%;
+                    transform: translateX(100%);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Rome Attractions</h1>
+        <img src="italyPics\romePics\romeSkyline.jpg" alt="Picture of the Roman skyline." class="title_img">
+
+        <ul class="link_bar">
+            <li>
+                <a href="#vatican">Vatican City</a>
+            </li>
+            <li>
+                <a href="#colosseum">Colosseum</a>
+            </li>
+            <li>
+                <a href="#castel">Castel Sant'Angelo</a>
+            </li>
+            <li>
+                <a href="#forum">Roman Forum</a>
+            </li>
+            <li>
+                <a href="#pantheon">Pantheon</a>
+            </li>
+        </ul>
+        <br>
+
+        <article>
+            <h2 id="vatican">The Vatican City</h2>
+            <img src="italyPics\romePics\vatican.jpeg" alt="Picture of St Peters Square at the Vatican City in Rome." class="attraction_img">
+            <p>
+                <a href="">Link to information about the Vatican City</a>
+            </p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="colosseum">The Roman Colosseum</h2>
+            <img src="italyPics\romePics\colosseum.jpg" alt="Picture of the Roman Colosseum." class="attraction_img2">
+            <p>
+                <a href="">Link to information about the Roman Colosseum</a>
+            </p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="castel">The Castel Sant'Angelo</h2>
+            <img src="italyPics\romePics\castel.jpg" alt="Picture of the Castel Sant'Angelo." class="attraction_img">
+            <p>
+                <a href="">Link to information about the Castel Sant'Angelo</a>
+            </p>  
+            <br>
+        </article>
+
+        <article>
+            <h2 id="forum">The Roman Forum</h2>
+            <img src="italyPics\romePics\forum.jpg" alt="Picture of the Roman Forum." class="attraction_img2">
+            <p>
+                <a href="">Link to information about the Roman Forum</a>
+            </p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="pantheon">The Pantheon</h2>
+            <img src="italyPics\romePics\pantheon.jpg" alt="Picture of the Pantheon in Rome." class="attraction_img2">
+            <p>
+                <a href="">Link to information about the Pantheon</a>
+            </p>
+            <br>
+        </article>
+    </body>
+
+    <footer>
+        Copyright © 2023, CGS3853: Group 2. All rights reserved.
+        <button type="button">
+            <a href="index.html">Go back to home page</a>
+        </button>
+    </footer>
+
+    <script>
+        // Function to toggle the stylesheet
+        function toggleStylesheet() {
+            const stylesheet = document.getElementById('stylesheet');
+            let stylesheetState = true;
+
+            return function () {
+                if (stylesheetState) {
+                    // Switch to an alternative stylesheet
+                    stylesheet.href = 'style/alternate.css';
+                } else {
+                    // Switch back to the default stylesheet
+                    stylesheet.href = 'style/main.css';
+                }
+                // Toggle the state
+                stylesheetState = !stylesheetState;
+            };
+        }
+
+        // Call the toggleStylesheet function when the DOM is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton2 = document.getElementById('toggleButton2');
+            toggleButton2.addEventListener('click', toggleStylesheet());
+        });
+    </script>
+</html>

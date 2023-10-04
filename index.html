@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link id="stylesheet" rel="stylesheet" href="style\main.css"> <!-- Default stylesheet -->
+        <title>Italian Destinations - Home</title>
+
+        <!-- Toggle button to switch stylesheets -->
+        <button class="toggle-button" id="toggleButton">
+            Toggle Mode
+        </button>
+        <style>
+            @keyframes slideIn {
+                0% {
+                    transform: translateY(-100%);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes slideOver {
+                0% {
+                    left: 100%;
+                    transform: translateX(0);
+                }
+                100% {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            @keyframes slideCenter {
+                0% {
+                    left: 100%;
+                    transform: translateX(100%);
+                }
+                100% {
+                    left: 100%;
+                    transform: translateX(0%);
+                }
+            }
+        </style>
+    </head>
+
+    <body class ="index_body">
+        <h1 class="title_text ">Italian Destinations</h1>
+        <img src="italyPics\indexItaly.jpg" alt="Cartoon map of Italy" class="index_img">
+
+        <!-- Section links -->
+        <nav>
+            <ul class="navbar">
+            <li><a href="romeAttractions.html">Rome Attractions</a></li>
+            <li><a href="florenceAttractions.html">Florence Attractions</a></li>
+            <li><a href="veniceAttractions.html">Venice Attractions</a></li>
+            <li><a href="attractionSummary.html">Summary</a></li>
+            </ul> 
+        </nav>
+
+        <footer>
+            Copyright © 2023, CGS3853: Group 2. All rights reserved.
+        </footer> 
+
+        <script>
+            // JavaScript to handle stylesheet toggling
+            const toggleButton = document.getElementById('toggleButton');
+            const stylesheet = document.getElementById('stylesheet');
+            let stylesheetState = true; 
+
+            toggleButton.addEventListener('click', () => {
+                if (stylesheetState) {
+                    // Switch to an alternative stylesheet
+                    stylesheet.href = 'style/alternate.css'; 
+                } else {
+                    // Switch back to the default stylesheet
+                    stylesheet.href = 'style/main.css'; 
+                }
+                // Toggle the state
+                stylesheetState = !stylesheetState;
+            });
+        </script>
+    </body>
+</html>
