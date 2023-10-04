@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <script src="styleButtonToggle.js" defer></script> <!-- Style Button Script -->
         <link id="stylesheet" rel="stylesheet" href="style\main.css"> <!-- Default stylesheet -->
         <title>Italian Destinations - Florence Attractions</title>
 
@@ -45,7 +46,8 @@
     </head>
 
     <body>
-        <h1>Venice Attractions</h1>
+        <h1>Florence Attractions</h1>
+        <!--Picture source: https://www.istockphoto.com/photo/florence-gm637504750-113738285-->
         <img src="italyPics\florencePics\florenceSkyline.jpg" alt="Picture of the Florence skyline." class="title_img">
 
         <ul class="link_bar">
@@ -53,61 +55,66 @@
                 <a href="#cathedral">Cathedral of Santa Maria</a>
             </li>
             <li>
-                <a href="#galleria">Doges Palace</a>
+                <a href="#galleria">Galleria Del Accademia</a>
             </li>
             <li>
-                <a href="#mercato">Fenice Theatre</a>
+                <a href="#mercato">Mercato Central Firenze</a>
             </li>
             <li>
-                <a href="#santaCroce">Grand Canal</a>
+                <a href="#santaCroce">Santa Croce</a>
             </li>
             <li>
-                <a href="#gallery">St. Marks Square</a>
+                <a href="#gallery">Uffizi Gallery</a>
             </li>
         </ul>
         <br>
 
         <article>
             <h2 id="cathedral">The Cathedral of Santa Maria</h2>
+            <!--Picture source: https://www.italiandualcitizenship.net/the-history-of-the-cathedral-of-santa-maria-del-fiore-il-duomo/-->
             <img src="italyPics\florencePics\cathedralOfSantaMaria.jpg" alt="Picture of the Cathedral of Santa Maria." class="attraction_img">
             <p>
-                <a href="">Link to information about the Cathedral of Santa Maria</a>
+                <a href="https://duomo.firenze.it/en/discover/cathedral" target="blank" rel="noopener noreferrer">Link to information about the Cathedral of Santa Maria</a>
             </p>
             <br>
         </article>
 
         <article>
             <h2 id="palace">The Galleria Del Accademia</h2>
+            <!--Picture source: https://www.accademia.org/-->
             <img src="italyPics\florencePics\galleriaDelAccademia.jpg" alt="Picture of the Galleria Del Accademia." class="attraction_img2">
             <p>
-                <a href="">Link to information about the Galleria Del Accademia</a>
+                <a href="https://www.galleriaaccademiafirenze.it/en/collections/" target="blank" rel="noopener noreferrer">Link to information about the Galleria Del Accademia</a>
             </p>
             <br>
         </article>
 
         <article>
             <h2 id="mercato">The Mercato Central Firenze</h2>
+            <!--Picture source: https://www.mercatocentrale.com/florence/-->
             <img src="italyPics\florencePics\mercatoCentralFirenze.jpg" alt="Picture of the Mercato Central Firenze." class="attraction_img">
             <p>
-                <a href="">Link to information about the Mercato Central Firenze</a>
+                <a href="https://www.mercatocentrale.com/florence/" target="blank" rel="noopener noreferrer">Link to information about the Mercato Central Firenze</a>
             </p>  
             <br>
         </article>
 
         <article>
-            <h2 id="santaCroce">The Grand Canal</h2>
-            <img src="italyPics/venicePics/grandCanal.jpg" alt="Picture of the Grand Canal." class="attraction_img2">
+            <h2 id="santaCroce">Santa Croce</h2>
+            <!--Picture source: https://www.britannica.com/topic/Santa-Croce-->
+            <img src="italyPics\florencePics\santaCroce.jpg" alt="Picture of Santa Croce." class="attraction_img2">
             <p>
-                <a href="">Link to information about the Grand Canal</a>
+                <a href="https://www.santacroceopera.it/en/" target="blank" rel="noopener noreferrer">Link to information about Santa Croce</a>
             </p>
             <br>
         </article>
 
         <article>
-            <h2 id="gallery">St. Marks Square</h2>
-            <img src="italyPics/venicePics/stMarksSquare.jpg" alt="Picture of St. Marks Square." class="attraction_img2">
+            <h2 id="gallery">The Uffizi Gallery</h2>
+            <!--Picture source: https://www.througheternity.com/en/blog/history/wonders-uffizi-gallery.html-->
+            <img src="italyPics\florencePics\uffiziGallery.jpg" alt="Picture of the Uffizi Gallery." class="attraction_img2">
             <p>
-                <a href="">Link to information about St. Marks Square</a>
+                <a href="https://www.uffizi.it/en/the-uffizi" target="blank" rel="noopener noreferrer">Link to information about the Uffizi Gallery</a>
             </p>
             <br>
         </article>
@@ -119,30 +126,4 @@
             <a href="index.html">Go back to home page</a>
         </button>
     </footer>
-
-    <script>
-        // Function to toggle the stylesheet
-        function toggleStylesheet() {
-            const stylesheet = document.getElementById('stylesheet');
-            let stylesheetState = true;
-
-            return function () {
-                if (stylesheetState) {
-                    // Switch to an alternative stylesheet
-                    stylesheet.href = 'style/alternate.css';
-                } else {
-                    // Switch back to the default stylesheet
-                    stylesheet.href = 'style/main.css';
-                }
-                // Toggle the state
-                stylesheetState = !stylesheetState;
-            };
-        }
-
-        // Call the toggleStylesheet function when the DOM is ready
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggleButton2 = document.getElementById('toggleButton2');
-            toggleButton2.addEventListener('click', toggleStylesheet());
-        });
-    </script>
 </html>

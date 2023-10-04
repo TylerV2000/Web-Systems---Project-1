@@ -58,6 +58,7 @@ ul > li {
 .attraction_img {
     width: 600px;
     height: auto;
+    object-fit: cover;
 }
 
 body{
@@ -68,5 +69,14 @@ img{
     animation: slideOver 1s ease-in-out forwards;
 }
 .attraction_img2{
-    animation: slideRight 1s ease-in-out forwards;   
+    animation: slideRight 1s ease-in-out forwards;
+    width: 600px;
+    height: auto;
+    object-fit: cover;  
+}
+.alt_title{
+    padding-top: 30px;
+    display: block;
+    color: white;
+    text-align: right;
 }

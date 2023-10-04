@@ -2,11 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <script src="styleButtonToggle.js" defer></script> <!-- Style Button Script -->
         <link id="stylesheet" rel="stylesheet" href="style\main.css"> <!-- Default stylesheet -->
         <title>Italian Destinations - Home</title>
 
         <!-- Toggle button to switch stylesheets -->
-        <button class="toggle-button" id="toggleButton">
+        <button class="toggle-button" id="toggleButton2">
             Toggle Mode
         </button>
         <style>
@@ -45,6 +46,7 @@
 
     <body class ="index_body">
         <h1 class="title_text ">Italian Destinations</h1>
+        <!--Picture source: https://www.vectorstock.com/royalty-free-vector/italy-tourist-map-vector-44551969-->
         <img src="italyPics\indexItaly.jpg" alt="Cartoon map of Italy" class="index_img">
 
         <!-- Section links -->
@@ -60,24 +62,5 @@
         <footer>
             Copyright © 2023, CGS3853: Group 2. All rights reserved.
         </footer> 
-
-        <script>
-            // JavaScript to handle stylesheet toggling
-            const toggleButton = document.getElementById('toggleButton');
-            const stylesheet = document.getElementById('stylesheet');
-            let stylesheetState = true; 
-
-            toggleButton.addEventListener('click', () => {
-                if (stylesheetState) {
-                    // Switch to an alternative stylesheet
-                    stylesheet.href = 'style/alternate.css'; 
-                } else {
-                    // Switch back to the default stylesheet
-                    stylesheet.href = 'style/main.css'; 
-                }
-                // Toggle the state
-                stylesheetState = !stylesheetState;
-            });
-        </script>
     </body>
 </html>
