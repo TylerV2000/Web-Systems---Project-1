@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="styleButtonToggle.js" defer></script> <!-- Style Button Script -->
+        <link id="stylesheet" rel="stylesheet" href="style\main.css"> <!-- Default stylesheet -->
+        <title>Italian Destinations - Venice Attractions</title>
+
+        <!-- Toggle button to switch stylesheets -->
+        <button class="toggle-button" id="toggleButton2">
+            Toggle Mode
+        </button>
+
+        <style>
+            @keyframes slideIn {
+                0% {
+                    transform: translateY(-100%);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes slideOver {
+                0% {
+                    left: 100%;
+                    transform: translateX(100%);
+                }
+                100% {
+                    left: 100%;
+                    transform: translateX(0%);
+                }
+            }
+            @keyframes slideRight {
+                0% {
+                    right: 100%;
+                    transform: translateX(0%);
+                }
+                100% {
+                    right: 100%;
+                    transform: translateX(100%);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Venice Attractions</h1>
+        <!--Picture source: https://pixels.com/featured/city-skyline-at-dusk-venice-italy-stefano-politi-markovina.html-->
+        <img src="italyPics\venicePics\veniceSkyline.jpg" alt="Picture of the Venetian skyline." class="title_img">
+
+        <ul class="link_bar">
+            <li>
+                <a href="#bridge">Bridge Sighs</a>
+            </li>
+            <li>
+                <a href="#palace">Doges Palace</a>
+            </li>
+            <li>
+                <a href="#theatre">Fenice Theatre</a>
+            </li>
+            <li>
+                <a href="#canal">Grand Canal</a>
+            </li>
+            <li>
+                <a href="#square">St. Marks Square</a>
+            </li>
+        </ul>
+        <br>
+
+        <article>
+            <h2 id="bridge">The Bridge Sighs</h2>
+            <!--Picture source: https://www.visit-venice-italy.com/bridges-venice/bridge-of-sighs-venice-italy-ponte-sospiri.htm-->
+            <img src="italyPics\venicePics\bridgeSighs.jpg" alt="Picture of the Bridge Sighs." class="attraction_img">
+            <p>
+                <a href="https://www.britannica.com/topic/Bridge-of-Sighs" target="blank" rel="noopener noreferrer">Link to information about the Bridge Sighs</a>
+            </p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="palace">The Doges Palace</h2>
+            <!--Picture source: https://fullsuitcase.com/doges-palace-venice/-->
+            <img src="italyPics\venicePics\dogesPalace.jpg" alt="Picture of the Doges Palace." class="attraction_img2">
+            <p>
+                <a href="https://palazzoducale.visitmuve.it/en/home/" target="blank" rel="noopener noreferrer">Link to information about the Doges Palace</a>
+            </p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="theatre">The Fenice Theatre</h2>
+            <!--Picture source: https://www.viator.com/tours/Venice/FENICE-THEATRE-Audioguided-Tour/d522-73533P8-->
+            <img src="italyPics\venicePics\feniceTheatre.jpg" alt="Picture of the Fenice Theatre." class="attraction_img">
+            <p>
+                <a href="https://www.tripadvisor.com/Attraction_Review-g187870-d207094-Reviews-Teatro_La_Fenice-Venice_Veneto.html" target="blank" rel="noopener noreferrer">Link to information about the Fenice Theatre</a>
+            </p>  
+            <br>
+        </article>
+
+        <article>
+            <h2 id="canal">The Grand Canal</h2>
+            <!--Picture source: https://www.akvillas.com/destinations/italy/venice/navigate-venices-grand-canal-->
+            <img src="italyPics\venicePics\grandCanal.jpg" alt="Picture of the Grand Canal." class="attraction_img2">
+            <p>
+                <a href="https://www.britannica.com/topic/Grand-Canal-Venice-Italy" target="blank" rel="noopener noreferrer">Link to information about the Grand Canal</a>
+            </p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="square">St. Marks Square</h2>
+            <!--Picture source: https://www.thetrainline.com/via/europe/italy/venice/visiting-st-marks-square-->
+            <img src="italyPics\venicePics\stMarksSquare.jpg" alt="Picture of St. Marks Square." class="attraction_img2">
+            <p>
+                <a href="https://venicelover.com/st_marks_square.html" target="blank" rel="noopener noreferrer">Link to information about St. Marks Square</a>
+            </p>
+            <br>
+        </article>
+    </body>
+
+    <footer>
+        Copyright © 2023, CGS3853: Group 2. All rights reserved.
+        <button type="button">
+            <a href="index.html">Go back to home page</a>
+        </button>
+    </footer>
+</html>

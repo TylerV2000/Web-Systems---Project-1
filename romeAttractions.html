@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="styleButtonToggle.js" defer></script> <!-- Style Button Script -->
+        <link id="stylesheet" rel="stylesheet" href="style\main.css"> <!-- Default stylesheet -->
+        <title>Italian Destinations - Rome Attractions</title>
+
+        <!-- Toggle button to switch stylesheets -->
+        <button class="toggle-button" id="toggleButton2">
+            Toggle Mode
+        </button>
+
+        <style>
+            @keyframes slideIn {
+                0% {
+                    transform: translateY(-100%);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes slideOver {
+                0% {
+                    left: 100%;
+                    transform: translateX(100%);
+                }
+                100% {
+                    left: 100%;
+                    transform: translateX(0%);
+                }
+            }
+            @keyframes slideRight {
+                0% {
+                    right: 100%;
+                    transform: translateX(0%);
+                }
+                100% {
+                    right: 100%;
+                    transform: translateX(100%);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Rome Attractions</h1>
+        <!--Picture source: https://photos.com/featured/rome-skyline-with-church-cupolas-italy-romaoslo.html-->
+        <img src="italyPics\romePics\romeSkyline.jpg" alt="Picture of the Roman skyline." class="title_img">
+
+        <ul class="link_bar">
+            <li>
+                <a href="#vatican">Vatican City</a>
+            </li>
+            <li>
+                <a href="#colosseum">Colosseum</a>
+            </li>
+            <li>
+                <a href="#castel">Castel Sant'Angelo</a>
+            </li>
+            <li>
+                <a href="#forum">Roman Forum</a>
+            </li>
+            <li>
+                <a href="#pantheon">Pantheon</a>
+            </li>
+        </ul>
+        <br>
+
+        <article>
+            <h2 id="vatican">The Vatican City</h2>
+            <!--Picture source: https://www.cntraveler.com/activities/rome/st-peters-basilica-cupola\-->
+            <img src="italyPics\romePics\vatican.jpeg" alt="Picture of St Peters Square at the Vatican City in Rome." class="attraction_img">
+            <p>
+                <a href="https://www.rome.net/st-peters-basilica" target="blank" rel="noopener noreferrer">Link to information about the Vatican City</a>
+            </p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="colosseum">The Roman Colosseum</h2>
+            <!--Picture source: https://education.nationalgeographic.org/resource/colosseum/-->
+            <img src="italyPics\romePics\colosseum.jpg" alt="Picture of the Roman Colosseum." class="attraction_img2">
+            <p>
+                <a href="https://www.rome.info/attractions/colosseum/" target="blank" rel="noopener noreferrer">Link to information about the Roman Colosseum</a>
+            </p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="castel">The Castel Sant'Angelo</h2>
+            <!--Picture source: https://www.pandotrip.com/discover-castel-santangelo-an-ancient-jewel-of-rome-italy-7762/-->
+            <img src="italyPics\romePics\castel.jpg" alt="Picture of the Castel Sant'Angelo." class="attraction_img">
+            <p>
+                <a href="https://www.castel-sant-angelo-ticket.com/?msclkid=9205dd00f36516d232e1b81d61d5fe36&utm_source=bing&utm_medium=cpc&utm_campaign=Rome%20-%20Castle%20St%20Angelo%20-%20English%20-%20Rest%20of%20World%20-%20Search%20-%20All%20-%20All%20-%20cid2566&utm_term=%2Bst%20%2Bangelo%20%2Bcastel&utm_content=Generic%20-%20BMM%20-%20English%20-%20All" target="blank" rel="noopener noreferrer">Link to information about the Castel Sant'Angelo</a>
+            </p>  
+            <br>
+        </article>
+
+        <article>
+            <h2 id="forum">The Roman Forum</h2>
+            <!--Picture source: https://romesite.com/roman-forum.html-->
+            <img src="italyPics\romePics\forum.jpg" alt="Picture of the Roman Forum." class="attraction_img2">
+            <p>
+                <a href="https://www.britannica.com/topic/Roman-Forum" target="blank" rel="noopener noreferrer">Link to information about the Roman Forum</a>
+            </p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="pantheon">The Pantheon</h2>
+            <!--Picture source: https://www.rome.info/attractions/pantheon/-->
+            <img src="italyPics\romePics\pantheon.jpg" alt="Picture of the Pantheon in Rome." class="attraction_img2">
+            <p>
+                <a href="https://www.pantheonroma.com/home-eng/" target="blank" rel="noopener noreferrer">Link to information about the Pantheon</a>
+            </p>
+            <br>
+        </article>
+    </body>
+
+    <footer>
+        Copyright © 2023, CGS3853: Group 2. All rights reserved.
+        <button type="button">
+            <a href="index.html">Go back to home page</a>
+        </button>
+    </footer>
+</html>
