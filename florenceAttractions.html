@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="styleButtonToggle.js" defer></script> <!-- Style Button Script -->
+        <link id="stylesheet" rel="stylesheet" href="style\main.css"> <!-- Default stylesheet -->
+        <title>Italian Destinations - Florence Attractions</title>
+
+        <!-- Toggle button to switch stylesheets -->
+        <button class="toggle-button" id="toggleButton2">
+            Toggle Mode
+        </button>
+
+        <style>
+            @keyframes slideIn {
+                0% {
+                    transform: translateY(-100%);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes slideOver {
+                0% {
+                    left: 100%;
+                    transform: translateX(100%);
+                }
+                100% {
+                    left: 100%;
+                    transform: translateX(0%);
+                }
+            }
+            @keyframes slideRight {
+                0% {
+                    right: 100%;
+                    transform: translateX(0%);
+                }
+                100% {
+                    right: 100%;
+                    transform: translateX(200%);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Florence Attractions</h1>
+        <!--Picture source: https://www.istockphoto.com/photo/florence-gm637504750-113738285-->
+        <img src="italyPics\florencePics\florenceSkyline.jpg" alt="Picture of the Florence skyline." class="title_img">
+
+        <ul class="link_bar">
+            <li>
+                <a href="#cathedral">Cathedral of Santa Maria</a>
+            </li>
+            <li>
+                <a href="#galleria">Galleria Del Accademia</a>
+            </li>
+            <li>
+                <a href="#mercato">Mercato Central Firenze</a>
+            </li>
+            <li>
+                <a href="#santaCroce">Santa Croce</a>
+            </li>
+            <li>
+                <a href="#gallery">Uffizi Gallery</a>
+            </li>
+        </ul>
+        <br>
+
+        <article>
+            <h2 id="cathedral">The Cathedral of Santa Maria</h2>
+            <!--Picture source: https://www.italiandualcitizenship.net/the-history-of-the-cathedral-of-santa-maria-del-fiore-il-duomo/-->
+            <img src="italyPics\florencePics\cathedralOfSantaMaria.jpg" alt="Picture of the Cathedral of Santa Maria." class="attraction_img">
+            <p>
+                <a href="https://duomo.firenze.it/en/discover/cathedral" target="blank" rel="noopener noreferrer">Link to information about the Cathedral of Santa Maria</a>
+            </p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="palace">The Galleria Del Accademia</h2>
+            <!--Picture source: https://www.accademia.org/-->
+            <img src="italyPics\florencePics\galleriaDelAccademia.jpg" alt="Picture of the Galleria Del Accademia." class="attraction_img2">
+            <p>
+                <a href="https://www.galleriaaccademiafirenze.it/en/collections/" target="blank" rel="noopener noreferrer">Link to information about the Galleria Del Accademia</a>
+            </p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="mercato">The Mercato Central Firenze</h2>
+            <!--Picture source: https://www.mercatocentrale.com/florence/-->
+            <img src="italyPics\florencePics\mercatoCentralFirenze.jpg" alt="Picture of the Mercato Central Firenze." class="attraction_img">
+            <p>
+                <a href="https://www.mercatocentrale.com/florence/" target="blank" rel="noopener noreferrer">Link to information about the Mercato Central Firenze</a>
+            </p>  
+            <br>
+        </article>
+
+        <article>
+            <h2 id="santaCroce">Santa Croce</h2>
+            <!--Picture source: https://www.britannica.com/topic/Santa-Croce-->
+            <img src="italyPics\florencePics\santaCroce.jpg" alt="Picture of Santa Croce." class="attraction_img2">
+            <p>
+                <a href="https://www.santacroceopera.it/en/" target="blank" rel="noopener noreferrer">Link to information about Santa Croce</a>
+            </p>
+            <br>
+        </article>
+
+        <article>
+            <h2 id="gallery">The Uffizi Gallery</h2>
+            <!--Picture source: https://www.througheternity.com/en/blog/history/wonders-uffizi-gallery.html-->
+            <img src="italyPics\florencePics\uffiziGallery.jpg" alt="Picture of the Uffizi Gallery." class="attraction_img2">
+            <p>
+                <a href="https://www.uffizi.it/en/the-uffizi" target="blank" rel="noopener noreferrer">Link to information about the Uffizi Gallery</a>
+            </p>
+            <br>
+        </article>
+    </body>
+
+    <footer>
+        Copyright © 2023, CGS3853: Group 2. All rights reserved.
+        <button type="button">
+            <a href="index.html">Go back to home page</a>
+        </button>
+    </footer>
+</html>
